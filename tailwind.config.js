@@ -1,0 +1,131 @@
+module.exports = {
+  darkMode: ["class"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        border: "hsl(220, 10%, 85%)",
+        input: "hsl(220, 10%, 80%)",
+        ring: "hsl(217, 100%, 55%)",
+        background: "hsl(0, 0%, 100%)",
+        foreground: "hsl(215, 25%, 15%)",
+        primary: {
+          DEFAULT: "hsl(217, 100%, 55%)",
+          foreground: "hsl(0, 0%, 100%)",
+          hover: "hsl(217, 100%, 47%)",
+          active: "hsl(217, 100%, 42%)",
+        },
+        secondary: {
+          DEFAULT: "hsl(217, 70%, 96%)",
+          foreground: "hsl(217, 60%, 25%)",
+          hover: "hsl(217, 85%, 92%)",
+          active: "hsl(217, 70%, 88%)",
+        },
+        tertiary: {
+          DEFAULT: "hsl(212, 25%, 94%)",
+          foreground: "hsl(217, 25%, 20%)",
+        },
+        accent: {
+          DEFAULT: "hsl(200, 80%, 60%)",
+          foreground: "hsl(0, 0%, 100%)",
+        },
+        success: {
+          DEFAULT: "hsl(145, 60%, 40%)",
+          foreground: "hsl(0, 0%, 100%)",
+        },
+        warning: {
+          DEFAULT: "hsl(40, 90%, 50%)",
+          foreground: "hsl(0, 0%, 100%)",
+        },
+        error: {
+          DEFAULT: "hsl(0, 70%, 50%)",
+          foreground: "hsl(0, 0%, 100%)",
+        },
+        info: {
+          DEFAULT: "hsl(210, 90%, 45%)",
+          foreground: "hsl(0, 0%, 100%)",
+        },
+        muted: {
+          DEFAULT: "hsl(220, 20%, 95%)",
+          foreground: "hsl(220, 8%, 38%)",
+        },
+        card: {
+          DEFAULT: "hsl(220, 20%, 98%)",
+          foreground: "hsl(215, 25%, 15%)",
+        },
+        neutral: {
+          50: "hsl(220, 20%, 98%)",
+          100: "hsl(220, 20%, 95%)",
+          200: "hsl(220, 15%, 92%)",
+          300: "hsl(220, 10%, 84%)",
+          400: "hsl(220, 9%, 70%)",
+          500: "hsl(220, 8%, 52%)",
+          600: "hsl(220, 8%, 38%)",
+          700: "hsl(220, 9%, 28%)",
+          800: "hsl(220, 12%, 18%)",
+          900: "hsl(220, 16%, 10%)",
+        },
+      },
+      fontFamily: {
+        sans: ["Inter", "system-ui", "sans-serif"],
+        mono: ['"IBM Plex Mono"', "monospace"],
+      },
+      fontSize: {
+        h1: ["28px", { lineHeight: "1.2", fontWeight: "500" }],
+        h2: ["22px", { lineHeight: "1.3", fontWeight: "500" }],
+        h3: ["18px", { lineHeight: "1.4", fontWeight: "500" }],
+        h4: ["16px", { lineHeight: "1.4", fontWeight: "500" }],
+        "body-lg": ["16px", { lineHeight: "1.5", fontWeight: "400" }],
+        body: ["14px", { lineHeight: "1.5", fontWeight: "400" }],
+        "body-sm": ["13px", { lineHeight: "1.5", fontWeight: "400" }],
+        caption: ["12px", { lineHeight: "1.5", fontWeight: "400" }],
+      },
+      spacing: {
+        1: "4px",
+        2: "8px",
+        4: "16px",
+        6: "24px",
+        8: "32px",
+        12: "48px",
+        16: "64px",
+        xs: "8px",
+        sm: "16px",
+        md: "24px",
+        lg: "32px",
+        xl: "48px",
+        "2xl": "64px",
+      },
+      borderRadius: {
+        sm: "4px",
+        md: "6px",
+        lg: "8px",
+        full: "9999px",
+      },
+      boxShadow: {
+        sm: "0 1px 2px hsl(220, 10%, 50%, 0.1)",
+        md: "0 2px 6px hsl(220, 10%, 50%, 0.15)",
+        lg: "0 4px 10px hsl(220, 10%, 45%, 0.2)",
+        xl: "0 6px 20px hsl(220, 10%, 40%, 0.25)",
+      },
+      transitionDuration: {
+        fast: "150ms",
+        normal: "250ms",
+        slow: "400ms",
+      },
+      transitionTimingFunction: {
+        "ease-in": "cubic-bezier(0.4, 0, 1, 1)",
+        "ease-out": "cubic-bezier(0, 0, 0.2, 1)",
+        "ease-in-out": "cubic-bezier(0.4, 0, 0.2, 1)",
+      },
+      backgroundImage: {
+        "gradient-primary": "linear-gradient(135deg, hsl(217, 100%, 55%), hsl(214, 95%, 62%))",
+        "gradient-secondary": "linear-gradient(135deg, hsl(217, 70%, 96%), hsl(214, 80%, 92%))",
+        "gradient-accent": "linear-gradient(135deg, hsl(200, 80%, 60%), hsl(210, 80%, 55%))",
+      },
+    },
+  },
+  plugins: [],
+};

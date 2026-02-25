@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-border: 220 10% 85%;
+    --color-input: 220 10% 80%;
+    --color-ring: 217 100% 55%;
+    --color-background: 0 0% 100%;
+    --color-foreground: 215 25% 15%;
+    
+    --color-primary: 217 100% 55%;
+    --color-primary-foreground: 0 0% 100%;
+    --color-primary-hover: 217 100% 47%;
+    --color-primary-active: 217 100% 42%;
+    
+    --color-secondary: 217 70% 96%;
+    --color-secondary-foreground: 217 60% 25%;
+    --color-secondary-hover: 217 85% 92%;
+    --color-secondary-active: 217 70% 88%;
+    
+    --color-tertiary: 212 25% 94%;
+    --color-tertiary-foreground: 217 25% 20%;
+    
+    --color-accent: 200 80% 60%;
+    --color-accent-foreground: 0 0% 100%;
+    
+    --color-success: 145 60% 40%;
+    --color-success-foreground: 0 0% 100%;
+    
+    --color-warning: 40 90% 50%;
+    --color-warning-foreground: 0 0% 100%;
+    
+    --color-error: 0 70% 50%;
+    --color-error-foreground: 0 0% 100%;
+    
+    --color-info: 210 90% 45%;
+    --color-info-foreground: 0 0% 100%;
+    
+    --color-muted: 220 20% 95%;
+    --color-muted-foreground: 220 8% 38%;
+    
+    --color-card: 220 20% 98%;
+    --color-card-foreground: 215 25% 15%;
+    
+    --font-sans: "Inter", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", monospace;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  html,
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+}
+
+@layer utilities {
+  .text-gradient-primary {
+    background: linear-gradient(135deg, hsl(217, 100%, 55%), hsl(214, 95%, 62%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
