@@ -17,3 +17,8 @@ Rules:
 </instructions>
 
 <!-- Add tasks here only when there are real next steps. -->
+
+<todo>
+Further iterate on AssessmentDetailPage
+Continue refining based on next round of feedback (e.g. Summary tab content, real video integration)
+</todo>

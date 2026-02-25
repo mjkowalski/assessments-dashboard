@@ -1,5 +1,6 @@
 import { ArrowUp, ArrowDown } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Table,
   TableBody,
@@ -61,6 +62,7 @@ export function AssessmentsTable({
   sortConfig,
   onSort,
 }: AssessmentsTableProps) {
+  const navigate = useNavigate();
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
 
   const allSelected =
@@ -201,9 +203,13 @@ export function AssessmentsTable({
             <TableRow
               key={assessment.assessmentId}
               className="border-b border-border bg-background transition-colors duration-fast cursor-pointer hover:bg-[hsl(240,5.9%,90%)]"
+              onClick={() => navigate("/assessments/example")}
             >
               {/* Row checkbox */}
-              <TableCell className="w-10 px-4">
+              <TableCell
+                className="w-10 px-4"
+                onClick={(e) => e.stopPropagation()}
+              >
                 <Checkbox
                   checked={selectedIds.has(assessment.assessmentId)}
                   onCheckedChange={(checked) =>
